@@ -1,0 +1,9 @@
+Host palcloud
+    HostName 35.197.74.100
+    User pallaire
+    IdentityFile pallaire-google-west
+
+Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/pallaire-github
