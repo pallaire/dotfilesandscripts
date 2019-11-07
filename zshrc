@@ -107,6 +107,5 @@ alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias python='python3'
 
 
-export PATH=$PATH:$HOME/bin
-
+export PATH=$PATH:$HOME/bin:/usr/local/sbin
 
