@@ -1,15 +1,26 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Fonts Installation
+# https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#option-4-homebrew-fonts
+# https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/RobotoMono
+# Then select the Roboto Mono Nerd Font
+
+# colorls Installation
+# https://github.com/athityakumar/colorls
+# sudo gem install colorls
+
+# powerlevel9k Installation
+# https://github.com/Powerlevel9k/powerlevel9k
+# brew tap sambadevi/powerlevel9k
+POWERLEVEL9K_MODE='nerdfont-complete'
+source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 # Path to your oh-my-zsh installation.
+# Install oh-my-zsh : https://ohmyz.sh/
 export ZSH="/Users/pallaire/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+#History setup
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=100000
+SAVEHIST=$HISTSIZ
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -78,34 +89,15 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias python='python3'
+alias ls='colorls'
+alias reload="source ~/.zshrc"
 
 
-export PATH=$PATH:$HOME/bin:/usr/local/sbin
+# iTerm2 MacOS Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
