@@ -67,7 +67,7 @@ if has('gui_running')
     "let g:solarized_hitrail=1
     "colorscheme solarized
     set background=dark
-    colorscheme PaperColor
+    colorscheme Tomorrow-Night-Bright
 
     " Input Font : http://input.fontbureau.com/
     set guifont=RobotoMono-Medium:h14

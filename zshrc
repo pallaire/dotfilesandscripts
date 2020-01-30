@@ -89,7 +89,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.cargo/bin:$PATH
 
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
@@ -100,4 +100,9 @@ alias reload="source ~/.zshrc"
 
 # iTerm2 MacOS Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+# Roblox Setup
+export CONTRIB_PATH="/Users/pallaire/Perforce/pallaireMBP/Contrib2"
+
 
