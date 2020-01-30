@@ -8,6 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 " to INSTALL : git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-sensible'
 
 " Tools
 Plugin 'scrooloose/nerdtree'
@@ -76,7 +77,12 @@ else
         let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
         let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
     endif
-    colorscheme zenburn
+    
+    set termguicolors
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"    
+    set background=dark
+    colorscheme Tomorrow-Night-Bright
 endif
 
 
