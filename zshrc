@@ -11,7 +11,7 @@
 # https://github.com/Powerlevel9k/powerlevel9k
 # brew tap sambadevi/powerlevel9k
 POWERLEVEL9K_MODE='nerdfont-complete'
-source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+source $HOME/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
 
 # Path to your oh-my-zsh installation.
 # Install oh-my-zsh : https://ohmyz.sh/
@@ -82,7 +82,6 @@ SAVEHIST=$HISTSIZ
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    zsh-syntax-highlighting
     ssh-agent
 )
 
@@ -94,7 +93,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.cargo/bin:$PATH
 alias gvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias python='python3'
-alias ls='colorls'
+# alias ls='colorls'
 alias reload="source ~/.zshrc"
 
 
