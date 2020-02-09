@@ -10,5 +10,6 @@ Host palcloud
 
 Host *
     AddKeysToAgent yes
+    IgnoreUnknown UseKeychain
     UseKeychain yes
     IdentityFile ~/.ssh/pallaire-github
