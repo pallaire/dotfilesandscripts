@@ -1,3 +1,8 @@
+Host gregcloud
+    HostName 35.197.74.100
+    User greg
+    IdentityFile greg-google-west
+
 Host palcloud
     HostName 35.197.74.100
     User pallaire

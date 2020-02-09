@@ -15,7 +15,7 @@ source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 
 # Path to your oh-my-zsh installation.
 # Install oh-my-zsh : https://ohmyz.sh/
-export ZSH="/Users/pallaire/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 #History setup
 HISTFILE=$HOME/.zsh_history
