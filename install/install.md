@@ -15,3 +15,13 @@
     1. install ruby
     2. install colorls : gems install colorls
 
+
+# Linux
+1. sudo apt install vim neovim ruby ruby-dev build-essential zsh python3 gpg mosh git
+
+
+
+# Mac
+1. Install homebrew
+    1. https://brew.sh/
+2. brew install vim neovim macvim python3 gpg mosh node

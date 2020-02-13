@@ -60,15 +60,8 @@ if has('gui_running')
     let g:airline_theme='one'
     let g:one_allow_italics=1
 
-    " set background=dark
-    " colorscheme one
-
     "set background=dark
-    "let g:solarized_contrast="high"
-    "let g:solarized_hitrail=1
-    "colorscheme solarized
-    set background=dark
-    colorscheme Tomorrow-Night-Bright
+    "colorscheme Tomorrow-Night-Bright
 
     " Input Font : http://input.fontbureau.com/
     set guifont=RobotoMono-Medium:h14
@@ -81,8 +74,8 @@ else
     set termguicolors
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"    
-    set background=dark
-    colorscheme Tomorrow-Night-Bright
+    "set background=dark
+    "colorscheme Tomorrow-Night-Bright
 endif
 
 
