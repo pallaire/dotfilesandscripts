@@ -1,3 +1,5 @@
+### INSTALL
+
 # Fonts Installation
 # https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md#option-4-homebrew-fonts
 # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/RobotoMono
@@ -10,8 +12,17 @@
 # powerlevel9k Installation
 # https://github.com/Powerlevel9k/powerlevel9k
 # brew tap sambadevi/powerlevel9k
-POWERLEVEL9K_MODE='nerdfont-complete'
-source $HOME/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+# POWERLEVEL9K_MODE='nerdfont-complete'
+# source $HOME/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+
+# command line syntax highlight
+# # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#
+
+### INSTALL DONE
+
+
+
 
 # Path to your oh-my-zsh installation.
 # Install oh-my-zsh : https://ohmyz.sh/
@@ -83,6 +94,7 @@ SAVEHIST=$HISTSIZ
 plugins=(
     git
     ssh-agent
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,5 +115,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Roblox Setup
 export CONTRIB_PATH="/Users/pallaire/Perforce/pallaireMBP/Contrib2"
+
+PROMPT='%2~ %# '
+
+
 
 
