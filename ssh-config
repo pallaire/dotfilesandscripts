@@ -6,7 +6,7 @@ Host gregcloud
 Host palcloud
     HostName 35.197.74.100
     User pallaire
-    IdentityFile pallaire-google-west
+    IdentityFile ~/.ssh/pallaire-google-west
 
 Host *
     AddKeysToAgent yes
