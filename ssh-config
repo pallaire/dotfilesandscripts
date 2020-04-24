@@ -14,3 +14,9 @@ Host *
     IgnoreUnknown UseKeychain
     UseKeychain yes
     IdentityFile ~/.ssh/pallaire-github
+
+Host streamcamel
+    HostName streamstracker.com
+    User ubuntu
+    IdentityFile ~/.ssh/streamcamel
+    
